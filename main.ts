@@ -5,13 +5,19 @@ function Temp () {
     }
     return Temporizador
 }
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(Ventana)
+})
 function ResetT () {
     TInicial = input.runningTime()
     Temporizador = 0
 }
+input.onButtonPressed(Button.B, function () {
+    basic.showNumber(Ventilador)
+})
+let CO2 = 0
 let Ventilador = 0
 let Ventana = 0
-let CO2 = 0
 let Tiempo = 0
 let TInicial = 0
 let Temporizador = 0
